@@ -19,7 +19,7 @@ data <- data[data$Date == "1/2/2007" | data$Date == "2/2/2007", ]
 data$DateTime <- strptime(paste(data$Date, data$Time), "%d/%m/%Y %H:%M:%S")
 
 # Open the plot device (PNG file).
-png(filename = "plot3.png", width = 480, height = 480, units = "px", bg = "white")
+png(filename = "plot3.png", width = 480, height = 480, units = "px", bg = "transparent")
 
 # Plot the data.
 plot(data$DateTime, data$Sub_metering_1, type = "l", xlab = "", ylab = "Energy sub metering")

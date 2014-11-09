@@ -19,7 +19,7 @@ data <- data[data$Date == "1/2/2007" | data$Date == "2/2/2007", ]
 data$DateTime <- strptime(paste(data$Date, data$Time), "%d/%m/%Y %H:%M:%S")
 
 # Open the plot device (PNG file).
-png(filename = "plot1.png", width = 480, height = 480, units = "px", bg = "white")
+png(filename = "plot1.png", width = 480, height = 480, units = "px", bg = "transparent")
 # Draw the histogram 
 hist(data$Global_active_power, main = "Global Active Power", xlab = "Global Active Power (kilowatts)", col = "red")
 

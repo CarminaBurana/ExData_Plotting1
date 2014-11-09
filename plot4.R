@@ -19,7 +19,7 @@ data <- data[data$Date == "1/2/2007" | data$Date == "2/2/2007", ]
 data$DateTime <- strptime(paste(data$Date, data$Time), "%d/%m/%Y %H:%M:%S")
 
 # Open the plot device (PNG file).
-png(filename = "plot4.png", width = 480, height = 480, units = "px", bg = "white")
+png(filename = "plot4.png", width = 480, height = 480, units = "px", bg = "transparent")
 
 # Set the (2-by-2) layout of subsequently drawn figures and margins.
 par (mfrow = c(2, 2))
