@@ -34,7 +34,7 @@ p6a <- p6a + scale_colour_hue(name = "County",
                               breaks = c("06037", "24510"),
                               labels =c("Los Angeles", "Baltimore"))
 
-# Create new data frame to hold percentual emission changes by time interval for the two locations
+# Create new data frame to hold emission change percentages by time interval for the two locations
 changes <- data.frame(interval = character(), percent = numeric(), fips = character())
 
 # Compute Change Percentage for each period of time and location

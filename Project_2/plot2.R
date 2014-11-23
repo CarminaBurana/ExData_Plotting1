@@ -13,7 +13,7 @@ BaltimoreEmissionsByYear <- tapply(BaltimoreEmissions$Emissions, BaltimoreEmissi
 # Open the plot device (PNG file).
 png(filename = "plot2.png", width = 640, height = 640, units = "px", bg = "white")
 
-# Bar plot Baltimore Emissions by Year
+# Bar plot Baltimore PM2.5 Emissions by Year
 plot <- barplot(BaltimoreEmissionsByYear,            
                 names.arg = names(BaltimoreEmissionsByYear),
                 main = "Total PM2.5 Emissions in Baltimore, 1999 - 2008",

@@ -12,6 +12,7 @@ TotalEmissionsByYear <- tapply(NEI$Emissions, NEI$year, sum)
 # Open the plot device (PNG file).
 png(filename = "plot1.png", width = 640, height = 640, units = "px", bg = "white")
 
+# Plot Total PM2.5 Emissions in USA between 1999 and 2008
 plot <- barplot(TotalEmissionsByYear,            
         names.arg = names(TotalEmissionsByYear),
         main = "Total PM25 Emissions in USA, 1999 - 2008",
