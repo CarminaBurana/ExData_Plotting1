@@ -15,7 +15,7 @@ png(filename = "plot1.png", width = 640, height = 640, units = "px", bg = "white
 # Plot Total PM2.5 Emissions in USA between 1999 and 2008
 plot <- barplot(TotalEmissionsByYear,            
         names.arg = names(TotalEmissionsByYear),
-        main = "Total PM25 Emissions in USA, 1999 - 2008",
+        main = "Total PM2.5 Emissions in USA, 1999 - 2008",
         xlab = "Year",
         ylab = "PM2.5 Emissions (Tons)",        
         sub = "Data Provided by EPA's National Emissions Inventory",
